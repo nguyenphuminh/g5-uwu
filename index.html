@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Secret stuffs</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Cainut.css">
+	<script type="text/javascript" src="typed.js"></script>
+</head>
+<body>
+	<script type="text/javascript" language="javascript">
+		function start(){
+			var typed1 = new Typed('.hint', {
+				strings: ['Hãy kéo xuống đi UwU'],
+				typeSpeed: 50,
+				backSpeed: 0,
+				fadeOut: true,
+				loop: false
+			});
+		}
+		function bounce(){
+			let a = document.querySelector(".bounce");
+			let b = document.querySelector(".bounce2");
+			setInterval(function(){
+				a.style.display = "inherit";
+				a.style.top = `${Math.random() * 80 + 1}%`
+				a.style.left = `${Math.random() * 80 + 1}%`
+				b.style.display = "inherit";
+				b.style.top = `${Math.random() * 80 + 1}%`
+				b.style.left = `${Math.random() * 80 + 1}%`
+			},1000)
+		}
+	</script>
+	<div>
+		<h1 class="main-content" align="center" >Secret stuffs</h1>
+	</div>
+	<br>  
+	<div align ="center">
+		<button class="box" onmouseenter="this.style.backgroundColor='#3B9C9C'" onmouseleave="this.style.backgroundColor='white'" onclick="start()">Ấn để bắt đầu!</button>
+		<br/>
+		<br/>
+		<br/>
+		<div class="hint"></div>
+	</div>
+	<br/>
+	<br/>
+	<br>
+	<div>
+		<section>
+			<p><h1 align="center" class="move">Tiếp tục nào</h1></p>
+		</section>
+		<section>
+			<p><h1 align="center" class="move2">Nữa đi, sắp rồi</h1></p>
+		</section>
+	</div>
+	<br>
+	<div align="center">
+		<div class="bounce" style="display:none;font-family: Consolas;position:fixed;top:50%;">Epic Luv To Các bạn nữ G5 UwU</div>
+		<div class="bounce2" style="color:white;display:none;font-family: Consolas;position:fixed;top:50%;">Chúc mừng 20/10</div>
+		<button class="box2" onmouseenter="this.style.backgroundColor='#3B9C9C'" onmouseleave="this.style.backgroundColor='white'" onclick="bounce()">Nhấn đi UwU</button>
+	</div>
+</body>
+</html>
